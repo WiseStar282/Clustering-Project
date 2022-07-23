@@ -49,7 +49,7 @@ print(bplot)
 ## **Hasil Interpretasi**
 **1. Korelasi Antar Peubah**
 >Tingkat korelasi tiap variabel dapat dilihat berdasarkan sudut yang terbentuk antara vektor
-variabel. Semakin kecil sudut atau semakin lancip sudut yang terbentuk, maka semakin
+peubah. Semakin kecil sudut atau semakin lancip sudut yang terbentuk, maka semakin
 positif tinggi korelasinya. Jika besar sudut melewati 90º atau semakin tumpul, maka
 korelasi antara variable akan semakin kecil/negative.</br>
 Berdasarkan gambar diatas, dapat dilihat ada peubah yang memiliki korelasi paling tinggi
