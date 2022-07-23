@@ -7,6 +7,6 @@ Dataset berjudul _CounterStrike: Match statistics for Counter Strike Global Offe
 Pada projek ini akan dilakukan [Analisis biplot](https://github.com/WiseStar282/Clustering-Project/blob/main/Analisis%20Biplot.md) pada dataset untuk melihat korelasi antar peubah. <br>
 Clustering adalah proses mengelompokkan data ke dalam beberapa cluster atau kelompok sehingga data dalam suatu clsuter memiliki tingkat kemiripan yang maksimum dan data antar cluster yang berbeda memiliki kemiripan minimum. 
 <br>Pada projek ini, clustering yang akan diterapkan adalah:
-1. K-means Clustering
-2. Hierarchiral Clustering <br>
+1. [K-means Clustering](https://github.com/WiseStar282/Clustering-Project/blob/main/K-MeansClust.md)
+2. [Hierarchiral Clustering](https://github.com/WiseStar282/Clustering-Project/blob/main/HierarchiralClust.md) 
 
