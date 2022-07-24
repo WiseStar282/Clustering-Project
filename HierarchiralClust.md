@@ -1,2 +1,2 @@
 ## Hierarchical Clustering
-Hierarchical clustering adalah teknik clustering yang membentuk hirarki atau berdasarkan tingkatan tertentu sehingga menyerupai struktur pohon. Dengan demikian proses pengelompokannya dilakukan secara bertingkat atau bertahap.
+Hierarchical clustering adalah teknik clustering yang membentuk hirarki (dendrogram) atau berdasarkan tingkatan tertentu sehingga menyerupai struktur pohon. Dengan demikian proses pengelompokannya dilakukan secara bertingkat atau bertahap. Tujuannya untuk menunjukkan kemiripan antar data. Setiap data yang mirip akan memiliki hubungan hirarki yang dekat dan menbentuk cluster data.
