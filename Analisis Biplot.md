@@ -6,7 +6,11 @@ Informasi yang diberikan oleh biplot mencakup objek dan peubah dalam satu gambar
   2. Keberagaman Peubah
   3. Kemiripan antar objek yang diamati 
  <a/>
- Langkah-langkah:
+ Langkah-langkah:<br>
+ 
+ Full kode R bisa dilihat [disini](https://github.com/WiseStar282/Clustering-Project/blob/main/Analisis%20Biplot/CodeR_Analisis%20Biplot.R )
+ 
+ **Menyiapkan Library dan Dataset**
  
 ```lua
 #Library
@@ -21,10 +25,21 @@ databaru <- data[sample(nrow(data), 50), ]
 
 #Membuat variabel baru tanpa kolom data non-numerik agar bisa di PCA
 datasample <- databaru[,c(6:16)]
+```
+|Dataset counterstrike|Sample 50 Data Acak|Kolom Numerik|
+|---|----|---|
+|![dataset counter strike look](https://user-images.githubusercontent.com/87527087/180614604-ab040fbd-eb6a-472e-8dd0-048332116c2b.png)|![50 data acak](https://user-images.githubusercontent.com/87527087/180614944-a13cef7d-04ed-4bdd-9d67-ffa290157e03.png)|![dataNumerik](https://user-images.githubusercontent.com/87527087/180615073-75906f03-d56f-4ccf-9a56-c38643693632.png)|
 
+**Melakukan PCA**
+
+```lua
 #Melakukan PCA dengan function prcomp
 data.pca <- prcomp(datasample, center= TRUE, scale = TRUE)
+```
 
+**Membuat Grafik Biplot**
+
+```lua
 #Membuat grafik biplot
 bplot <- ggbiplot (data.pca,
                   choices = c(1,2),
@@ -36,13 +51,10 @@ bplot <- ggbiplot (data.pca,
                   circle = FALSE)
 #Menampilkan hasil biplot
 print(bplot)
-
 ```
-|Dataset counterstrike|Sample 50 Data Acak|Kolom Numerik|
-|---|----|---|
-|![dataset counter strike look](https://user-images.githubusercontent.com/87527087/180614604-ab040fbd-eb6a-472e-8dd0-048332116c2b.png)|![50 data acak](https://user-images.githubusercontent.com/87527087/180614944-a13cef7d-04ed-4bdd-9d67-ffa290157e03.png)|![dataNumerik](https://user-images.githubusercontent.com/87527087/180615073-75906f03-d56f-4ccf-9a56-c38643693632.png)|
 
-## **Hasil Gambar Biplot**
+**Hasil Gambar Biplot** <br>
+
 ![hasil biplot](https://user-images.githubusercontent.com/87527087/180615220-57c6f3b8-94ba-48ab-81ad-bfad24ba2175.png)
 
 ## **Hasil Interpretasi**
