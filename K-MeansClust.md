@@ -42,7 +42,7 @@ points(kmeans2$centers[,c("PC1", "PC2")], col= 1:2, pch = 8, cex = 2)
 #Gambar Plot clustering Kmeans Setelah di PCA
 fviz_cluster(kmeans2, databaru)
 ```
-Hasil:
+**Hasil:**
 |Dataset Counterstrike|Mengambil 50 Data Sampel Bertipe Numerik|
 |--|--|
 | ![dataset counterstrike](https://user-images.githubusercontent.com/87527087/180640072-3d3388f6-957a-4b25-a3ad-95a7cb24b46e.png)| ![50 data numerik](https://user-images.githubusercontent.com/87527087/180640073-b7093b3d-fdc0-4c8b-9503-9bec7a7a3538.png)|
@@ -52,7 +52,14 @@ Hasil:
 |![optimal cluster](https://user-images.githubusercontent.com/87527087/180640097-12b8355b-ece2-4534-9c03-d405c58ef6d4.png) |
 Jumlah cluster optimal = 2. Sehingga k pada kmeans adalah 2.
 
-|Hasil Kmeans Tanpa PCA|Grafik Plot Kmeans Tanpa PCA|
+**Hasil Perhitungan Kmeans Clustering**
+|Sebelum PCA|Setelah PCA|
 |--|--|
-|![kmeans awal](https://user-images.githubusercontent.com/87527087/180640691-3326d97d-b0fa-469c-afe4-a9cafd94a590.png)|![plot kmeans awal](https://user-images.githubusercontent.com/87527087/180640693-f4db0294-8ada-49c3-a2e3-8a5bc8f5076f.png)|
-Nilai within-cluster sum of squares = 66.5% |Gambar kmeans clustering dengan k=2
+|![kmeans awal](https://user-images.githubusercontent.com/87527087/180640691-3326d97d-b0fa-469c-afe4-a9cafd94a590.png)| ![kmeans2](https://user-images.githubusercontent.com/87527087/180641019-3aa56341-a06a-4289-9131-6eb5bb781aa5.png)|
+Nilai within-cluster sum of squares = 66.5% |Nilai within-cluster sum of squares = 38.9%
+
+**Gambar Plot Kmeans Clustering <br/>**
+|Sebelum PCA|Setelah PCA|
+|--|--|
+|![plot kmeans awal](https://user-images.githubusercontent.com/87527087/180640693-f4db0294-8ada-49c3-a2e3-8a5bc8f5076f.png) |![plot kmeans2](https://user-images.githubusercontent.com/87527087/180641006-3ebf7ea2-b157-4d4f-9397-ba430c906e5c.png)|
+|![plot fvr awal](https://user-images.githubusercontent.com/87527087/180641216-8a5719e2-7319-4a30-ad30-fa8c82fb3ab6.png)|![plot fvr pca](https://user-images.githubusercontent.com/87527087/180641222-e7a30c00-5c87-4e34-b27f-ef582565562e.png)|
