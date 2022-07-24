@@ -2,8 +2,12 @@
 K-means clustering merupakan salah satu metode cluster analysis non hirarki yang berusaha untuk mempartisi objek yang ada kedalam satu atau lebih cluster atau kelompok objek berdasarkan karakteristiknya, sehingga objek yang mempunyai karakteristik yang sama dikelompokan dalam satu cluster yang sama dan objek yang mempunyai karakteristik yang berbeda dikelompokan kedalam cluster yang lain.
 
 Langkah-langkah:
+Full kode R nya bisa diklik [disini](https://github.com/WiseStar282/Clustering-Project/tree/main/K-Means%20Clustering)
+
+**Menyiapkan Library dan Dataset**
 ```lua
 #Library
+library(readr)
 library(factoextra)
 
 #Menginput Dataset ke R
@@ -15,14 +19,33 @@ rownames(baru) <- make.names(data$Map, unique = TRUE)
 
 #Mengambil 50 data acak
 databaru <- baru[sample(nrow(data), 50),c(6:15)]
+```
+|Dataset Counterstrike|Mengambil 50 Data Sampel Bertipe Numerik|
+|--|--|
+| ![dataset counterstrike](https://user-images.githubusercontent.com/87527087/180640072-3d3388f6-957a-4b25-a3ad-95a7cb24b46e.png)| ![50 data numerik](https://user-images.githubusercontent.com/87527087/180640073-b7093b3d-fdc0-4c8b-9503-9bec7a7a3538.png)|
 
+**Mencari Jumlah Clustering Optimal Dengan Metode Silhouette**
+
+```lua
 #Mencari Jumlah Clustering Optimal Dengan Metode Silhouette
 fviz_nbclust(databaru, kmeans, method = "silhouette")
+```
+|Jumlah Cluster Optimal Dengan Metode Silhoutte|
+|--|
+|![optimal cluster](https://user-images.githubusercontent.com/87527087/180640097-12b8355b-ece2-4534-9c03-d405c58ef6d4.png) |
+Jumlah cluster optimal = 2. Sehingga k pada kmeans adalah 2.
 
+**Melakukan Perhitungan K-means Sebelum PCA**
+
+```lua
 #Kmeans Tanpa di PCA dengan k=2
 kmeans.awal <- kmeans(databaru,2)
 kmeans.awal
+```
 
+**Melakukan Plotting Kmeans Sebelum PCA**
+
+```lua
 #Gambar Plot Kmeans Sebelum di PCA
 plot(databaru[c("Assists", "Deaths")], col=
        kmeans.awal$cluster, main = "Kmeans Sebelum PCA" )
@@ -31,13 +54,21 @@ points(kmeans.awal$centers[,c("Assists", "Deaths")],
 
 #Gambar Plot clustering Kmeans Sebelum di PCA
 fviz_cluster(kmeans.awal, databaru)
+```
 
+**Melakukan Perhitungan K-means Dengan PCA**
+
+```lua
 #Kmeans Setelah di PCA
 data.pca <- prcomp(databaru, center = TRUE, scale = TRUE)
 df.pca <- as.data.frame(data.pca$x[,1:2])
 kmeans2 <- kmeans(df.pca,2)
 kmeans2
+```
 
+**Melakukan Plotting Kmeans Setelah PCA**
+
+```lua
 #Gambar Plot Kmeans k=2 Setelah di PCA
 plot (df.pca[c("PC1", "PC2")], col= kmeans2$cluster)
 points(kmeans2$centers[,c("PC1", "PC2")], col= 1:2, pch = 8, cex = 2)
@@ -45,15 +76,6 @@ points(kmeans2$centers[,c("PC1", "PC2")], col= 1:2, pch = 8, cex = 2)
 #Gambar Plot clustering Kmeans Setelah di PCA
 fviz_cluster(kmeans2, databaru)
 ```
-**Hasil:**
-|Dataset Counterstrike|Mengambil 50 Data Sampel Bertipe Numerik|
-|--|--|
-| ![dataset counterstrike](https://user-images.githubusercontent.com/87527087/180640072-3d3388f6-957a-4b25-a3ad-95a7cb24b46e.png)| ![50 data numerik](https://user-images.githubusercontent.com/87527087/180640073-b7093b3d-fdc0-4c8b-9503-9bec7a7a3538.png)|
-
-|Jumlah Cluster Optimal Dengan Metode Silhoutte|
-|--|
-|![optimal cluster](https://user-images.githubusercontent.com/87527087/180640097-12b8355b-ece2-4534-9c03-d405c58ef6d4.png) |
-Jumlah cluster optimal = 2. Sehingga k pada kmeans adalah 2.
 
 **Hasil Perhitungan Kmeans Clustering**
 |Sebelum PCA|Setelah PCA|
