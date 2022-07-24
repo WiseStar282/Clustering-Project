@@ -106,7 +106,9 @@ rect.hclust(hirarki.ave, k = 2, border = 2:3)
 ```
 ![cluster dendogram](https://user-images.githubusercontent.com/87527087/180656899-7964ff09-f717-4fa7-bbed-0094a7a05b50.png)
 
+**Melihat Anggota Masing-Masing Cluster**
 
+```lua
 ## Anggota cluster
 hasil.cut = cutree(hirarki.ave,2)
 table(hasil.cut)
@@ -117,3 +119,13 @@ labels=csgo$Map [hasil.cut == 1] ; labels
 row.names(csgob) [hasil.cut == 2]
 labels=csgo$Map [hasil.cut == 2] ; labels
 ```
+|Jumlah Anggota Cluster|
+|--|
+|![anggota cluster](https://user-images.githubusercontent.com/87527087/180657090-12d4ad12-1db2-4afc-a094-df23281c80da.png)|
+Cluster 1 berjumlah 24 dan cluster 2 berjumlah 16
+
+|Anggota Cluster 1|Anggota Cluster 2|
+|--|--|
+|![cluster1](https://user-images.githubusercontent.com/87527087/180657083-b1708969-a61b-4b50-b7d5-7d094a506ffd.png)|![cluster2](https://user-images.githubusercontent.com/87527087/180657085-fc145e5b-ab64-4230-9a79-438fd3f57b3f.png)| 
+
+**Pembahasan**
