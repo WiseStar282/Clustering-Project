@@ -7,6 +7,8 @@ Pada clustering ini, metode pengelompokkan yang digunakan adalah
 </a>
 Langkah-langkah:<br/>
 
+Full kode R nya bisa diklik [disini](https://github.com/WiseStar282/Clustering-Project/tree/main/Hierarchical%20Clustering)
+
  **Menyiapkan Library dan Dataset**
 
 ```lua
@@ -129,3 +131,11 @@ Cluster 1 berjumlah 24 dan cluster 2 berjumlah 16
 |![cluster1](https://user-images.githubusercontent.com/87527087/180657083-b1708969-a61b-4b50-b7d5-7d094a506ffd.png)|![cluster2](https://user-images.githubusercontent.com/87527087/180657085-fc145e5b-ab64-4230-9a79-438fd3f57b3f.png)| 
 
 **Pembahasan**
+<p align="justify">Berdasarkan dataset ini, dari ketiga teknik agglomerative, ternyata teknik average linkage adalah
+teknik agglomerative terbaik untuk data CSGO karena memiliki nilai korelasi cophenetic tertinggi
+yaitu 0.7178595 sehingga analisis cluster pada data CSGO menggunakan teknik average linkage.
+Jumlah kluster yang diperlukan cukup 2 saja karena dengan 2 klustering sudah terlihat variasi
+antara cluster 1 dan cluster 2. Cluster 1 memiliki anggota yang lebih banyak yaitu sebanyak 24
+map (dalam CSGO) dan cluster 2 sebanyak 16 map dengan nama map terbanyak yaitu Mirage </p>
+
+[Homepage](https://github.com/WiseStar282/Clustering-Project)
