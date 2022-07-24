@@ -76,3 +76,6 @@ kemiripan antar beberapa objek, yaitu:
 >1. Mirage, Cache, Dust II dengan peubah terkait yaitu **Deaths** dan **Team A Round**
 >2. Mirage, Austria, Mirage dengan peubah yang terkait yaitu **Match Time**
 >3. Canals, Dust II, Dust II dengan peubah yang terkait yaitu **Assis**t dan **Team B Round**
+<a/>
+
+[HOMEPAGE](https://github.com/WiseStar282/Clustering-Project)
