@@ -3,6 +3,9 @@ K-means clustering merupakan salah satu metode cluster analysis non hirarki yang
 
 Langkah-langkah:
 ```lua
+#Library
+library(factoextra)
+
 #Menginput Dataset ke R
 data <- read.csv("C:/Users/ACER/Downloads/Compressed/CSGOcomplete.csv", row.names = NULL)
 
