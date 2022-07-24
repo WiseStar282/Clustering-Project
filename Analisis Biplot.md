@@ -78,4 +78,5 @@ kemiripan antar beberapa objek, yaitu:
 >3. Canals, Dust II, Dust II dengan peubah yang terkait yaitu **Assis**t dan **Team B Round**
 <a/>
 
-[HOMEPAGE](https://github.com/WiseStar282/Clustering-Project)
+[Homepage](https://github.com/WiseStar282/Clustering-Project) <br>
+[Kmeans Clustering](https://github.com/WiseStar282/Clustering-Project/blob/main/K-MeansClust.md)
