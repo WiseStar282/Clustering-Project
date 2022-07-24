@@ -9,6 +9,10 @@ Informasi yang diberikan oleh biplot mencakup objek dan peubah dalam satu gambar
  Langkah-langkah:
  
 ```lua
+#Library
+library(factoextra)
+library(ggbiplot)
+
 #Menginput Dataset ke R
 data <- read.csv("C:/Users/ACER/Downloads/Compressed/CSGOcomplete.csv") 
 
