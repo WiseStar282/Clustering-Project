@@ -69,4 +69,7 @@ Nilai within-cluster sum of squares = 66.5% |Nilai within-cluster sum of squares
 &emsp;&emsp;&emsp;Pada gambar plotting hasil kmeans clustering, meski keduanya sama-sama menggunakan k=2, kmeans clustering setelah PCA lebih terlihat jelas perbedaan antara masing-masing cluster dibandingkan sebelum PCA yang mana bisa dilihat kurang jelas suatu objek itu termasuk cluster 1 atau cluster 2.
 Sehingga dapat disimpulkan bahwa hasil k-means clustering akan lebih baik setelah dilakukan proses PCA (<em>Principal Component Analysis</em>)
 </p>
+
+[Homepage](https://github.com/WiseStar282/Clustering-Project) <br>
+[Hierarchiral Clustering](https://github.com/WiseStar282/Clustering-Project/blob/main/HierarchiralClust.md) 
        
