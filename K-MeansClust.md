@@ -1,5 +1,5 @@
 ## B. K-Means Clustering
-K-means clustering merupakan salah satu metode cluster analysis non hirarki yang berusaha untuk mempartisi objek yang ada kedalam satu atau lebih cluster atau kelompok objek berdasarkan karakteristiknya, sehingga objek yang mempunyai karakteristik yang sama dikelompokan dalam satu cluster yang sama dan objek yang mempunyai karakteristik yang berbeda dikelompokan kedalam cluster yang lain
+K-means clustering merupakan salah satu metode cluster analysis non hirarki yang berusaha untuk mempartisi objek yang ada kedalam satu atau lebih cluster atau kelompok objek berdasarkan karakteristiknya, sehingga objek yang mempunyai karakteristik yang sama dikelompokan dalam satu cluster yang sama dan objek yang mempunyai karakteristik yang berbeda dikelompokan kedalam cluster yang lain.
 
 Langkah-langkah:
 ```lua
@@ -42,3 +42,12 @@ points(kmeans2$centers[,c("PC1", "PC2")], col= 1:2, pch = 8, cex = 2)
 #Gambar Plot clustering Kmeans Setelah di PCA
 fviz_cluster(kmeans2, databaru)
 ```
+Hasil:
+|Dataset Counterstrike|Mengambil 50 Data Sampel Bertipe Numerik|
+|--|--|
+| ![dataset counterstrike](https://user-images.githubusercontent.com/87527087/180640072-3d3388f6-957a-4b25-a3ad-95a7cb24b46e.png)| ![50 data numerik](https://user-images.githubusercontent.com/87527087/180640073-b7093b3d-fdc0-4c8b-9503-9bec7a7a3538.png)|
+
+|Jumlah Cluster Optimal Dengan Metode Silhoutte|
+|--|
+|![optimal cluster](https://user-images.githubusercontent.com/87527087/180640097-12b8355b-ece2-4534-9c03-d405c58ef6d4.png) |
+Jumlah cluster optimal = 2. Sehingga k pada kmeans adalah 2.
