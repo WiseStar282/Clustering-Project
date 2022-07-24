@@ -7,7 +7,7 @@ Pada clustering ini, metode pengelompokkan yang digunakan adalah
 </a>
 Langkah-langkah:<br/>
 
-Full kode R nya bisa diklik [disini](https://github.com/WiseStar282/Clustering-Project/tree/main/Hierarchical%20Clustering)
+Full kode R nya bisa diklik [disini](https://github.com/WiseStar282/Clustering-Project/blob/main/Hierarchical%20Clustering/Code_Hirarchical%20Clustering.R)
 
  **Menyiapkan Library dan Dataset**
 
