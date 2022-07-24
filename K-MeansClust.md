@@ -51,3 +51,8 @@ Hasil:
 |--|
 |![optimal cluster](https://user-images.githubusercontent.com/87527087/180640097-12b8355b-ece2-4534-9c03-d405c58ef6d4.png) |
 Jumlah cluster optimal = 2. Sehingga k pada kmeans adalah 2.
+
+|Hasil Kmeans Tanpa PCA|Grafik Plot Kmeans Tanpa PCA|
+|--|--|
+|![kmeans awal](https://user-images.githubusercontent.com/87527087/180640691-3326d97d-b0fa-469c-afe4-a9cafd94a590.png)|![plot kmeans awal](https://user-images.githubusercontent.com/87527087/180640693-f4db0294-8ada-49c3-a2e3-8a5bc8f5076f.png)|
+Nilai within-cluster sum of squares = 66.5% |Gambar kmeans clustering dengan k=2
