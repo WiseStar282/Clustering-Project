@@ -1,4 +1,4 @@
-## A. Analisis Biplot
+## Analisis Biplot
 Menurut Sartono dkk, Biplot adalah salah satu upaya menggambarkan data-data yang ada pada tabel ringkasan dalam grafik berdimensi dua. 
 Informasi yang diberikan oleh biplot mencakup objek dan peubah dalam satu gambar.
 <br>Analisis biplot dapat memberikan informasi berupa: 
