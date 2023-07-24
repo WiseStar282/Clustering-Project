@@ -96,5 +96,5 @@ Sehingga dapat disimpulkan bahwa hasil k-means clustering akan lebih baik setela
 </p>
 
 [Homepage](https://github.com/WiseStar282/Clustering-Project) <br>
-[Hierarchiral Clustering](https://github.com/WiseStar282/Clustering-Project/blob/main/HierarchiralClust.md) 
+[Hierarchiral Clustering]([https://github.com/WiseStar282/Clustering-Project/blob/main/HierarchiralClust.md](https://github.com/WiseStar282/Clustering-Project/tree/main/Hierarchical%20Clustering)https://github.com/WiseStar282/Clustering-Project/tree/main/Hierarchical%20Clustering) 
        
